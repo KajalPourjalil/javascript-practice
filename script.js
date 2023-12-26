@@ -112,3 +112,15 @@ function findFib(n) {
 // console.log(findFib(3));
 // console.log(findFib(5));
 // console.log(findFib(7));
+
+//...............................
+
+function factorial(n) {
+    let fac = 1;
+    for(let i = 2; i <= n; i++){
+        fac *= i;
+    }
+    return fac;
+}
+
+console.log(factorial(10));
