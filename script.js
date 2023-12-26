@@ -156,7 +156,7 @@ function pofTwo(n) {
         }
         n = n / 2;
     }
-    return true
+    return true;
 }
 
 console.log(pofTwo(1));
