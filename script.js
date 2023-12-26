@@ -55,4 +55,18 @@ function checkEqual(arr1, arr2) {
     return false;
 }
 
-console.log(checkEqual(a6, a3));
+// console.log(checkEqual(a6, a3));
+
+//.............
+
+let c = 9;
+let d = 10;
+
+function addNum(a, b) {
+    console.log(a + b);
+}
+
+// addNum(c, d);
+
+//..................
+
