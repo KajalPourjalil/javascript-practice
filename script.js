@@ -123,4 +123,42 @@ function factorial(n) {
     return fac;
 }
 
-console.log(factorial(10));
+// console.log(factorial(10));
+
+//....................................
+
+function isPrime(n) {
+    if (n < 2) {
+        return false;
+    }
+
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+// console.log(isPrime(5));
+// console.log(isPrime(7));
+
+//.....................................
+
+function pofTwo(n) {
+    if (n < 1) {
+        return false;
+    }
+    while(n > 1){
+        if (n % 2 != 0) {
+            return false;
+        }
+        n = n / 2;
+    }
+    return true
+}
+
+console.log(pofTwo(1));
+console.log(pofTwo(2));
+console.log(pofTwo(5));
