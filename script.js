@@ -1,14 +1,14 @@
-function areIncreasing(arr) {
-    for (let i = 0; i < arr.length - 1; i ++) {
-        if (arr[i] >= arr[i + 1] || arr[i] === arr[i + 1]){
+function isInc(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] >= arr[i + 1]) {
             return false;
         }
     }
     return true;
 }
 
-const incArr = [1, 2, 3, 4, 5, 7, 10];
-const notIncArr = [5, 5, 7];
+const a1 = [3, 5, 5, 10, 34];
+const a2 = [5, 12, 13, 20];
 
-console.log(areIncreasing(incArr));
-console.log(areIncreasing(notIncArr));
+console.log(isInc(a1));
+console.log(isInc(a2));
