@@ -70,6 +70,7 @@ function addNum(a, b) {
 
 //..................
 
+
 function summ(n) {
     let sum = 0;
     for (let i = 0; i <= n; i++){
@@ -78,4 +79,20 @@ function summ(n) {
     return sum;
 }
 
+console.log(summ(10));
+
 //................
+
+const b = {
+    name: ['Kajal', 'Flora', 'Alexandra'],
+    age: ['25', '25', '42']
+}
+
+// for (let key in b) {
+    // console.log(key);
+    // console.log(b[key]);
+// }
+
+// for(let key in b) {
+    // console.log(b[key]);
+// }
