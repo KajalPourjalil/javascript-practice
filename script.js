@@ -79,7 +79,7 @@ function summ(n) {
     return sum;
 }
 
-console.log(summ(10));
+// console.log(summ(10));
 
 //................
 
@@ -96,3 +96,19 @@ const b = {
 // for(let key in b) {
     // console.log(b[key]);
 // }
+
+//..........................
+
+//fibonacci
+
+function findFib(n) {
+    const fib = [0, 1];
+    for (let i = 2; i < n; i++){
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib;
+}
+
+// console.log(findFib(3));
+// console.log(findFib(5));
+// console.log(findFib(7));
