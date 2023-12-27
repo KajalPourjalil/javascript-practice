@@ -201,4 +201,59 @@ function facRec(n){
     return facRec(n - 1) * n; 
 }
 
-console.log(facRec(5));
+// console.log(facRec(5));
+
+//......................................
+//linear search
+
+let arr = [-5, 2, 10, 4, 6];
+
+function linearS(t) {
+    for (let i = 0; i<arr.length; i++){
+        if (arr[i] === t) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+// console.log(linearS(7));
+
+
+//second way
+
+function lin2(arr, t){
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] === t){
+            return i;
+        }
+    }
+    return -1;
+}
+
+// console.log(lin2([-5, 2, 10, 4, 6], 6));
+
+//...........................................
+//binary search
+
+let a7 = [3, 2, 10, 9, 15, 1, -4, 13];
+
+function binaryS(arr, t){
+    let leftI = 0;
+    let rightI = arr.length - 1;
+
+    while (leftI <= rightI){
+        let midI = Math.floor((rightI + leftI)/2);
+        if (arr[midI] === t){
+            return midI;
+        } else if (arr[midI] > t){
+            rightI = midI - 1;
+        } else {
+            leftI = midI + 1;
+        };
+    };
+    return -1;
+}
+
+console.log(binaryS(a7, 1));
+
