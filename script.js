@@ -185,9 +185,9 @@ function fibRec(n){
     return fibRec(n - 1) + fibRec(n - 2)
 }
 
-console.log(fibRec(0));
-console.log(fibRec(1));
-console.log(fibRec(6));
+// console.log(fibRec(0));
+// console.log(fibRec(1));
+// console.log(fibRec(6));
 
 
 
@@ -195,6 +195,10 @@ console.log(fibRec(6));
 //.....................................
 
 function facRec(n){
-    
-
+    if (n === 0) {
+        return 1;
+    }
+    return facRec(n - 1) * n; 
 }
+
+console.log(facRec(5));
