@@ -173,4 +173,28 @@ function isPowofTwo(n) {
     return (n & (n-1)) === 0;
 }
 
-console.log(isPowofTwo(5));
+// console.log(isPowofTwo(5));
+
+//..................................
+//finding an nth element of the fib sequence
+
+function fibRec(n){
+    if (n < 2) {
+        return n;
+    }
+    return fibRec(n - 1) + fibRec(n - 2)
+}
+
+console.log(fibRec(0));
+console.log(fibRec(1));
+console.log(fibRec(6));
+
+
+
+
+//.....................................
+
+function facRec(n){
+    
+
+}
