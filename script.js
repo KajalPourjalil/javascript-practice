@@ -159,6 +159,18 @@ function pofTwo(n) {
     return true;
 }
 
-console.log(pofTwo(1));
-console.log(pofTwo(2));
-console.log(pofTwo(5));
+// console.log(pofTwo(1));
+// console.log(pofTwo(2));
+// console.log(pofTwo(5));
+
+//.................................
+
+function isPowofTwo(n) {
+    if (n < 1) {
+        return false;
+    }
+
+    return (n & (n-1)) === 0;
+}
+
+console.log(isPowofTwo(5));
