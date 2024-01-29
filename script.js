@@ -74,7 +74,7 @@ function compareLength(arr1, arr2){
 let by = [2, 3 ,6 , 1, 5, 4, 9, 23];
 let nt = [3,9,8,7,10,6,9,12,34];
 
-console.log(compareLength(by, nt));
+// console.log(compareLength(by, nt));
 
 
 
@@ -278,3 +278,23 @@ function binaryS(arr, t){
 
 // console.log(binaryS(a7, 1));
 
+//..........................................
+
+let nums = [1, 2, 3, 4, 5];
+
+function reverseArr(arr){
+    let start = 0;
+    let end = arr.length - 1;
+    
+    while(start < end){
+        let temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        
+        start++;
+        end--;
+    };
+    return arr;
+};
+
+console.log(reverseArr(nums))
