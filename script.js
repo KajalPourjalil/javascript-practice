@@ -297,4 +297,45 @@ function reverseArr(arr){
     return arr;
 };
 
-console.log(reverseArr(nums))
+// console.log(reverseArr(nums))
+
+//...................................
+
+let arein = [3,2,0,19,90];
+function minArr(arr){
+    let minV = arr[0];
+    for(let i=1;i<arr.length;i++){
+        if(arr[i] < minV) minV = arr[i];
+    };
+    return minV;
+}
+
+// console.log(minArr(arein));
+
+//....................................
+
+function maxArr(arr){
+    let maxV = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (maxV < arr[i]){
+            maxV = arr[i];
+        }
+    }
+   return maxV;
+}
+
+//.............................................
+
+let numss = [5,4,8,6,7,10];
+
+function maxAndMin(arr){
+    const min = minArr(arr);
+    const max = maxArr(arr);
+    
+    // return `Max: ${max}, Min: ${min}`;
+    return max, min;
+    // return min;
+}
+
+console.log(maxAndMin(numss));
+
