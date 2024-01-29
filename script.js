@@ -57,7 +57,28 @@ function checkEqual(arr1, arr2) {
 
 // console.log(checkEqual(a6, a3));
 
-//.............
+//.........................................................
+
+function compareLength(arr1, arr2){
+    if(arr1.length === arr2.length){
+        return "The arrays have the same length.";
+    }
+    else if (arr1.length > arr2.length){
+        return "Array1 is longer than Array2 by " + (arr1.length - arr2.length) + " elements.";
+    }
+    else {
+        return "Array2 is longer than Array1 by " + (arr2.length - arr1.length) + " elements."
+    }
+}
+
+let by = [2, 3 ,6 , 1, 5, 4, 9, 23];
+let nt = [3,9,8,7,10,6,9,12,34];
+
+console.log(compareLength(by, nt));
+
+
+
+//........................................................
 
 let c = 9;
 let d = 10;
@@ -255,5 +276,5 @@ function binaryS(arr, t){
     return -1;
 }
 
-console.log(binaryS(a7, 1));
+// console.log(binaryS(a7, 1));
 
