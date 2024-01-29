@@ -337,5 +337,35 @@ function maxAndMin(arr){
     // return min;
 }
 
-console.log(maxAndMin(numss));
+// console.log(maxAndMin(numss));
 
+//..................................................
+
+let aru = [1,3,2,5];
+
+function missingNum(arr){
+    let sumN = ((arr[0]+1)*(arr[0]+2))/2;
+    let sUmA = arr.reduce((a,b)=> a + b ,0) ;
+    return sumN - sUmA;
+}
+
+console.log(missingNum(aru));
+
+//...........................................
+
+function missingNums(arr){
+    let sortedArr = [...new Set(arr)].sort((a, b) => a - b);
+    let missingNums = [];
+    let expectedSum = ((sortedArr[0]+1)*(sortedArr[0]+2))/2;
+    let actualSum = sortedArr.reduce((a, b) => a + b, 0);
+    
+    for(let i = 0; i < sortedArr.length - 1; i++){
+        if(sortedArr[i+1] - sortedArr[i] > 1){
+            for(let j = sortedArr[i]+1; j < sortedArr[i+1]; j++){
+                missingNums.push(j);
+            }
+        }
+    }
+    
+    return missingNums;
+}
