@@ -385,4 +385,37 @@ function isSubset(subset, superset){
 let k1 = [5,3,8];
 let k2 = [9,8,4,3,5];
 
-console.log(isSubset(k1, k2))
+console.log(isSubset(k1, k2));
+
+//........................................................
+
+function sortArray(arr) {
+    // Create a count object to store the frequency of each number
+    const count = { 0: 0, 1: 0, 2: 0 };
+    for (let i = 0; i < arr.length; i++) {
+      count[arr[i]] = (count[arr[i]] || 0) + 1;
+    }
+  
+    // Create a sorted array by adding each number as many times as its frequency
+    const sortedArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (count[0] > 0) {
+        sortedArr.push(0);
+        count[0]--;
+      }
+      if (count[1] > 0) {
+        sortedArr.push(1);
+        count[1]--;
+      }
+      if (count[2] > 0) {
+        sortedArr.push(2);
+        count[2]--;
+      }
+    }
+  
+    return sortedArr;
+  }
+  
+  // Example usage
+  const arr = [1,1,0,1,2,0,2,2,2,0,0,1];
+  console.log(sortArray(arr)); // [0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2]
