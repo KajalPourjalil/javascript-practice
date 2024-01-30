@@ -349,7 +349,7 @@ function missingNum(arr){
     return sumN - sUmA;
 }
 
-console.log(missingNum(aru));
+// console.log(missingNum(aru));
 
 //...........................................
 
@@ -369,3 +369,21 @@ function missingNums(arr){
     
     return missingNums;
 }
+
+//.................................................
+
+function isSubset(subset, superset){
+    if(!Array.isArray(subset) || !Array.isArray(superset)) {
+        throw new TypeError("Both should be arrays");
+    }
+
+    const subsetSet = new Set(subset);
+    const supersetSet = new Set(superset);
+
+    return Array.from(subsetSet).every(Element => supersetSet.has(Element));
+}
+
+let k1 = [5,3,8];
+let k2 = [9,8,4,3,5];
+
+console.log(isSubset(k1, k2))
