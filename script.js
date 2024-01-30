@@ -227,9 +227,10 @@ function facRec(n){
 //......................................
 //linear search
 
-let arr = [-5, 2, 10, 4, 6];
+let arrd = [-5, 2, 10, 4, 6];
 
-function linearS(t) {
+
+function linearS(t, arr) {
     for (let i = 0; i<arr.length; i++){
         if (arr[i] === t) {
             return i;
@@ -238,7 +239,7 @@ function linearS(t) {
     return -1;
 }
 
-// console.log(linearS(7));
+console.log(linearS(7, arrd));
 
 
 //second way
@@ -332,9 +333,7 @@ function maxAndMin(arr){
     const min = minArr(arr);
     const max = maxArr(arr);
     
-    // return `Max: ${max}, Min: ${min}`;
-    return max, min;
-    // return min;
+    return `Max: ${max}, Min: ${min}`;
 }
 
 // console.log(maxAndMin(numss));
