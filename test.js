@@ -31,7 +31,6 @@ function allGreaterThanTwo(arr, t) {
 //return the index of a value
 
 let arr4 = [22,33,44,55,66];
-let n = 44;
 
 function findIndex(n, arr){
     for (let i = 0; i < arr.length; i++) {
@@ -42,5 +41,6 @@ function findIndex(n, arr){
     return -1;
 }
 
-let index = findIndex(n, arr4);
-console.log(index)
+console.log(findIndex(66, arr4))
+
+//time complexity: O(n)
