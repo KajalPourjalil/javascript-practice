@@ -28,6 +28,8 @@ function allGreaterThanTwo(arr, t) {
 // console.log(allGreaterThanTwo(array1, integer));
 
 
+//return the index of a value
+
 let arr4 = [22,33,44,55,66];
 let n = 44;
 
