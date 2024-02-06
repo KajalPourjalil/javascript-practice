@@ -1,13 +1,14 @@
 /*
 Create a function called "addToFifteen" that takes in an array of integers and returns an updated array where each element is increased by 15.
 
-Write a JavaScript program that takes two arrays as input and returns a single array containing only the elements that
-
 Create a function called containsDuplicates that takes in an array and returns true if there are any duplicates in the array, and false if there are no duplicates. The function should have a time
 
-Write a JavaScript program that takes two arrays as input and returns a single array containing only the elementsWrite a JavaScript program that takes two arrays as input and returns an array containing only the elements that areWrite a JavaScript program that takes two arrays as input and returns an array containing only the elements that are
 
-Write a JavaScript program that prompts the user to enter two arrays and compares them. If one array is larger than the other, display which array is larger and how many elements are in eachWrite a JavaScript program that takes two arrays as input and returns an array containing only the elements that are
+
+Write a JavaScript program that prompts the user to enter two arrays and compares them. If one array is larger than the other, display which array is larger and how many elements are in each
+
+Write a JavaScript program that takes two arrays as input and returns an array containing only the elements that are
+
 Write a JavaScript program that takes two arrays as input and returns an array containing only the elements thatWrite a JavaScript program that takes two arrays as input and returns a single array containing only the elements thatWrite a JavaScript program that takes two arrays as input and returns a single array containing only the elements that
 Create a function called containsDuplicates that takes in an array and returns true if there are any duplicates in the array, and false if there are no duplicates. The function should have a time
 Write a JavaScript program that prompts the user to enter two arrays and then compares them. If they are equal, display "The arrays are identical." Otherwise, display "The arrays are not
