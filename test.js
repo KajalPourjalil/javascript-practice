@@ -41,6 +41,38 @@ function findIndex(n, arr){
     return -1;
 }
 
-console.log(findIndex(66, arr4))
+// console.log(findIndex(66, arr4))
 
 //time complexity: O(n)
+
+//create a function to make an array with all numbers from 1 to 100 in it
+function createArray() {
+    let newArr = [];
+    for(let i = 2; i <= 100; i++) {
+        newArr.push(i);
+    }
+    return newArr;
+    // console.log(newArr)
+}
+
+// console.log(createArray());
+// createArray();
+
+
+
+//given an array with all the integers between 1 and 100 except for one, find the missing number
+function findMissingNumber(nums){
+    let sum = ((nums.length + 1) * (nums.length + 2)) / 2; //formula to calculate the sum of numbers from 1 to
+    let actualSum = nums.reduce((a, b) => a + b); //sum of given numbers in array
+    return sum - actualSum; //missing number is difference between expected sum and actual sum
+}
+
+// console.log(findMissingNumber(newArr));
+
+function createArrayAndFindNumber() {
+    let myArr = createArray();
+    let result = findMissingNumber(myArr);
+    return `The missing number in the array is ${result}`;
+}
+
+console.log(createArrayAndFindNumber());
