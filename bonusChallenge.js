@@ -46,7 +46,7 @@ function containsDuplicate(arr) {
 }
 
 let arr2 = [4,3,2,4,5,6,7,6];
-console.log(containsDuplicate(arr2));
+// console.log(containsDuplicate(arr2));
 
 // 3. Write a JavaScript program that prompts the user to enter two arrays and compares them. If one array is larger than the other, 
 // display which array is larger and how many elements are in each. If they are equal, display "The arrays are identical." 
@@ -64,12 +64,23 @@ function compare(arr1, arr2) {
     }   
 }
 
-console.log(compare(arr1, arr2));
+// console.log(compare(arr1, arr2));
 
 
 
 // 4. Create a function called `multiplyAll` that takes in an array of integers and 
 // returns the product of all the elements in the array. If the input array is empty, the function should return -1.
+
+function multiplyAll(arr){
+    let sum = 1;
+    if(arr.length == 0) return -1;
+    for(let i = 0; i < arr.length; i++) {
+        sum *= arr[i];
+    }
+    return sum;
+}
+
+console.log(multiplyAll(arr2));
 
 // 5. Write a JavaScript program that takes two arrays as input and 
 // returns an array containing only elements that are common.
