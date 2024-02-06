@@ -389,3 +389,13 @@ let k2 = [9,8,4,3,5];
 
 //........................................................
 
+//return the index of a given value
+let arr4 = [22,33,44,55,66];
+
+function findIndex(n, arr){
+    for (let i = 0; i < arr.length; i++) {
+        let element = arr[i];
+        if(element === n) return true;
+    }
+    return -1;
+}
