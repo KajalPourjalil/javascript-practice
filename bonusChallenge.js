@@ -85,6 +85,8 @@ console.log(multiplyAll(arr2));
 // 5. Write a JavaScript program that takes two arrays as input and 
 // returns an array containing only elements that are common.
 
+
+
 // 6. Create a function called "sortByName" that takes an array of objects 
 // with properties "name" and "age". The function should sort this array by name in alphabetical order.
 
