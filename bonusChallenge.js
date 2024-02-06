@@ -2,12 +2,7 @@
 // 1. Create a function called "addToFifteen" that takes in an array of integers and returns an 
 // updated array where each element is increased by 15.
 
-function addToFifteen(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        arr[i] += 15;
-    }
-    return arr;
-}
+
 
 function addToFifteen2(arr) {
     arr.forEach((element, index) => {
@@ -22,6 +17,36 @@ let arr1 = [1,2,3,4,5];
 
 // 2. Create a function called containsDuplicates that takes in an array and returns true if 
 // there are any duplicates in the array, and false if there are no duplicates.
+
+// function containsDuplicate(arr) {
+//     let duplicates = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = arr[i]; j < arr.length; j++){
+//             if (arr[j]  === arr[i]){
+//                 duplicates.push(arr[i]);
+//             }
+//         }
+//     }
+//     return duplicates;
+// }
+
+function containsDuplicate(arr) {
+    let duplicates = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++){
+            if (arr[j]  === arr[i]){
+                if (!duplicates.includes(arr[i])) {
+                    duplicates.push(arr[i]);
+                }
+                break;
+            }
+        }
+    }
+    return duplicates;
+}
+
+let arr2 = [4,3,2,4,5,6,7,6];
+console.log(containsDuplicate(arr2));
 
 // 3. Write a JavaScript program that prompts the user to enter two arrays and compares them. If one array is larger than the other, 
 // display which array is larger and how many elements are in each. If they are equal, display "The arrays are identical." 
