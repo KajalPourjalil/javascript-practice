@@ -1,8 +1,23 @@
 
 // 1. Create a function called "addToFifteen" that takes in an array of integers and returns an 
-// pdated array where each element is increased by 15.
+// updated array where each element is increased by 15.
 
+function addToFifteen(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] += 15;
+    }
+    return arr;
+}
 
+function addToFifteen2(arr) {
+    arr.forEach((element, index) => {
+        arr[index] += 15;
+    });
+    return arr;
+}
+
+let arr1 = [1,2,3,4,5];
+// console.log(addToFifteen2(arr1));
 
 
 // 2. Create a function called containsDuplicates that takes in an array and returns true if 
