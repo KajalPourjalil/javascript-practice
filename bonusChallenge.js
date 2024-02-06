@@ -52,6 +52,22 @@ console.log(containsDuplicate(arr2));
 // display which array is larger and how many elements are in each. If they are equal, display "The arrays are identical." 
 // Otherwise, display "The arrays are not equal"
 
+
+function compare(arr1, arr2) {
+    if (arr1.length === arr2.length) {
+        return `equal`;
+    } else if (arr1.length > arr2.length) {
+        return `Not equal. array1 is larger. array1 has ${arr1.length} elements and array2 has ${arr2.length} elements.`;
+    }
+    else {
+        return `Not equal. array2 is larger. array1 has ${arr1.length} elements and array2 has ${arr2.length} elements.`
+    }   
+}
+
+console.log(compare(arr1, arr2));
+
+
+
 // 4. Create a function called `multiplyAll` that takes in an array of integers and 
 // returns the product of all the elements in the array. If the input array is empty, the function should return -1.
 
