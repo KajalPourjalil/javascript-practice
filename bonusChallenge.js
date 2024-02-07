@@ -86,6 +86,22 @@ console.log(multiplyAll(arr2));
 // returns an array containing only elements that are common.
 
 
+function findCommon(arr1, arr2) {
+    let commonArr = [];
+    for(let i = 0; i < arr1.length; i++){
+        if(arr2.includes(arr1[i])) {
+            commonArr.push(arr1[i]);
+        }
+    }
+    return commonArr;
+}
+
+let arr3 = [22,34,56,78,90, 100];
+let arr4 = [22,45,67,90, 100, 56, 34];
+console.log(findCommon(arr3, arr4));
+
+
+
 
 // 6. Create a function called "sortByName" that takes an array of objects 
 // with properties "name" and "age". The function should sort this array by name in alphabetical order.
