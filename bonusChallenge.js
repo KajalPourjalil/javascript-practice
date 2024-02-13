@@ -150,6 +150,18 @@ function checkIfPalindrome(arr){
 
 // 10. Write a JavaScript program that takes two arrays as input and returns an array containing elements common to both
 
+function both(arr1, arr2){
+  let newArr = [];
+  for(let i = 0; i < arr1.length; i++){
+    if(arr2.includes(arr1[i])){
+      newArr.push(arr1[i]);
+    }
+  }
+  return newArr;
+}
+
+console.log(both(arr5, arr6));
+
 // 11. Write a function called checkAverage that takes in an array of numbers
 // as its only argument and returns whether or not the average of the array is greater than 75.
 
