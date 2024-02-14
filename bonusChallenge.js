@@ -160,7 +160,7 @@ function both(arr1, arr2){
   return newArr;
 }
 
-console.log(both(arr5, arr6));
+console.log(both(arr3, arr4));
 
 // 11. Write a function called checkAverage that takes in an array of numbers
 // as its only argument and returns whether or not the average of the array is greater than 75.
