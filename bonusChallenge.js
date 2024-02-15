@@ -129,7 +129,7 @@ function checkForDuplicates(arr) {
   }
 }
 
-console.log(checkForDuplicates(arr3, arr4));
+// console.log(checkForDuplicates(arr3, arr4));
 
 // 9. Write a function called checkIfPalindrome that checks if an array contains a palindrome.
 
@@ -160,13 +160,55 @@ function both(arr1, arr2){
   return newArr;
 }
 
-console.log(both(arr3, arr4));
+// console.log(both(arr3, arr4));
 
 // 11. Write a function called checkAverage that takes in an array of numbers
 // as its only argument and returns whether or not the average of the array is greater than 75.
 
+function checkAverage(arr){
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  if(sum /arr.length > 75) return true;
+  else return false;
+}
+
+let arr5 = [232, 543]
+// console.log(checkAverage(arr5));
+
 // 12. Write a JavaScript program that prompts the user to enter three numbers and returns whether or not they are prime.
 // If any of the inputted numbers is less than or equal to zero, the program should return false.
+
+function checkPrime(n1, n2, n3){
+  if (n1 || n2 || n3 < 2) {
+    return false;
+  }
+  
+
+  // for(let i = 2; i < n1; i++){
+  //   if(n1 % i === 0){
+  //     return false;
+  //   }
+  // }
+
+  // for(let i = 2; i < n2; i++){
+  //   if(n2 % i === 0){
+  //     return false;
+  //   }
+  // }
+
+  // for(let i = 2; i < n3; i++){
+  //   if(n3 % i === 0){
+  //     return false;
+  //   }
+  // }
+
+  return true;
+
+}
+
+console.log(checkPrime(0, 3, 3));
 
 // 13. Write a JavaScript program that takes two arrays as input and returns the number of common elements between them
 
