@@ -207,9 +207,35 @@ function checkPrime(n1, n2, n3) {
   return true;
 }
 
-console.log(checkPrime(0, 3, 3));
+// console.log(checkPrime(0, 3, 3));
 
 // 13. Write a JavaScript program that takes two arrays as input and returns the number of common elements between them
 
+function noCommon(arr1, arr2) {
+  let count = 0;
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr2.includes(arr1[i])) {
+      count++;
+    }
+  }
+  return count;
+}
+
+// console.log(noCommon(arr3, arr4));
+
 // 14. Write a JavaScript program that takes two arrays as input and returns the sum of their elements.
 // If either or both of the input arrays are empty, the program should handle this case appropriately by returning -1
+
+function sumArray(arr1, arr2) {
+  if(arr1.length !== arr2.length || arr1.length ===0 || arr2.length ===0) return -1; 
+
+  let newSum = [];
+  for (let i = 0; i < arr1.length; i++) {
+    newSum.push(arr1[i] + arr2[i]);
+  }
+
+  return newSum;
+}
+
+let arr6 = [6,7,8,9,10];
+console.log(sumArray(arr1, arr6));
