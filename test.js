@@ -78,7 +78,7 @@ function createArrayAndFindNumber() {
 // console.log(createArrayAndFindNumber());
 
 //merge two sorted arrays
-function mergeSortedArrays(arr1, arr2) {
+function mergeArray(arr1, arr2) {
     const merged = [];
     let i = 0;  let j = 0;
   
