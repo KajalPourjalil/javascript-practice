@@ -102,6 +102,7 @@ function mergeArray(arr1, arr2) {
       j++;
     }
   
+    
     return merged;
   }
 
