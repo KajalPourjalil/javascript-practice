@@ -82,4 +82,29 @@ function twoSum(arr, n){
 }
 
 let a8 = [2,3,4,5,6,7];
-console.log(twoSum(a8, 7));
+// console.log(twoSum(a8, 7));
+
+///////////////////////////////////////////////////////////////
+
+function findMax(arr){
+    let max = arr[0];
+    for(let i = 1; i < arr.length ; i++){
+        if(max < arr[i]){
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
+function findMin(arr){
+    let min = arr[0];
+    for(let i = 1; i <arr.length; i++){
+        if (min > arr[i]){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+
+console.log(findMax(a6));
+console.log(findMin(a8));
