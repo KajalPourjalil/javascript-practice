@@ -53,7 +53,8 @@ function removeDuplicate(arr){
 }
 
 let a7 = [5,5,4,4,9,9,10,11,12, 13, 13, 13, 13];
-// console.log(removeDuplicate(a7));
+let a9 = [1,1,2,2,3,3,4,4,5,5]
+// console.log(removeDuplicate(a9));
 
 /////////////////////////////////////////////////////////////
 
@@ -106,5 +107,19 @@ function findMin(arr){
     return min;
 }
 
-console.log(findMax(a6));
-console.log(findMin(a8));
+// console.log(findMax(a6));
+// console.log(findMin(a8));
+
+////////////////////////////////////////////////////////////////
+
+function remove(nums, val){
+    let count = 0;
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] !== val){
+            nums[count++] = nums[i];
+        }
+    }
+    return count;
+}
+
+console.log(remove(a9, 2));
