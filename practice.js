@@ -165,11 +165,8 @@ function maxSub(arr) {
 //////////////////////////////////////////////////////////////////
 
 function plusOne(arr) {
-  let last = arr.length - 1;
-  let one = arr[last] + 1;
-
-  for(let i = arr.length - 1; i >= 0; i--){
-    if(arr[i] < 9){
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] < 9) {
       arr[i]++;
       return arr;
     }
@@ -178,10 +175,26 @@ function plusOne(arr) {
 
   const result = new Array(arr.length + 1).fill(0);
   result[0] = 1;
-  return result;  
+  return result;
 }
 
 let a10 = [9, 9, 9];
-console.log(plusOne(a10));
+// console.log(plusOne(a10));
 
+//////////////////////////////////////////////////////////////////
 
+function findSing(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let flag = true;
+    for (let j = i + 1; i < arr.length; j++) {
+      if (arr[i] == arr[j]) {
+        flag = false;
+      }
+    }
+    if (flag == true) return arr[i];
+  }
+  return -1;
+}
+
+let a11 = [2, 1, 5, 3, 1, 5, 2];
+console.log(findSing(a11));
