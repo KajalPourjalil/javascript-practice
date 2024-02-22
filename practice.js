@@ -140,4 +140,28 @@ function searchInsert(arr, k) {
   return start;
 }
 
-console.log(searchInsert(a8, 8));
+// console.log(searchInsert(a8, 8));
+
+/////////////////////////////////////////////////////////////
+
+function maxSub(arr){
+  // let maximum = Math.max(arr);
+  // if (maximum < 0) return maximum;
+
+  let max_so_far = -Number.MAX_SAFE_INTEGER;
+  let max_ending_here = 0;
+ 
+  for(let i = 0; i <arr.length; i++){
+    max_ending_here += arr[i];
+    max_ending_here = Math.max(max_ending_here, arr[i]);
+    max_so_far = Math.max(max_so_far, max_ending_here);
+  }
+
+  return max_so_far;
+
+}
+
+console.log(maxSub(a8));
+
+//////////////////////////////////////////////////////////////////
+
