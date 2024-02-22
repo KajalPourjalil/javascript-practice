@@ -144,24 +144,44 @@ function searchInsert(arr, k) {
 
 /////////////////////////////////////////////////////////////
 
-function maxSub(arr){
+function maxSub(arr) {
   // let maximum = Math.max(arr);
   // if (maximum < 0) return maximum;
 
   let max_so_far = -Number.MAX_SAFE_INTEGER;
   let max_ending_here = 0;
- 
-  for(let i = 0; i <arr.length; i++){
+
+  for (let i = 0; i < arr.length; i++) {
     max_ending_here += arr[i];
     max_ending_here = Math.max(max_ending_here, arr[i]);
     max_so_far = Math.max(max_so_far, max_ending_here);
   }
 
   return max_so_far;
-
 }
 
-console.log(maxSub(a8));
+// console.log(maxSub(a8));
 
 //////////////////////////////////////////////////////////////////
+
+function plusOne(arr) {
+  let last = arr.length - 1;
+  let one = arr[last] + 1;
+
+  for(let i = arr.length - 1; i >= 0; i--){
+    if(arr[i] < 9){
+      arr[i]++;
+      return arr;
+    }
+    arr[i] = 0;
+  }
+
+  const result = new Array(arr.length + 1).fill(0);
+  result[0] = 1;
+  return result;  
+}
+
+let a10 = [9, 9, 9];
+console.log(plusOne(a10));
+
 
