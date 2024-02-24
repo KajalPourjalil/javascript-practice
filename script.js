@@ -343,8 +343,6 @@ function missingNum(arr){
 function missingNums(arr){
     let sortedArr = [...new Set(arr)].sort((a, b) => a - b);
     let missingNums = [];
-    let expectedSum = ((sortedArr[0]+1)*(sortedArr[0]+2))/2;
-    let actualSum = sortedArr.reduce((a, b) => a + b, 0);
     
     for(let i = 0; i < sortedArr.length - 1; i++){
         if(sortedArr[i+1] - sortedArr[i] > 1){
