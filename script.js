@@ -239,7 +239,7 @@ function linearS(t, arr) {
     return -1;
 }
 
-// console.log(linearS(7, arrd));
+// console.log(linearS(7, arrd)); 
 
 // console.log(lin2([-5, 2, 10, 4, 6], 6));
 
