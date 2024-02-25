@@ -109,4 +109,21 @@ function mergeArray(arr1, arr2) {
 let arr1 = [3,5,7,8];
 let arr2 = [12,14,15,20];
 
-console.log(`Merged Array: ${mergeArray(arr1, arr2)}`);
+// console.log(`Merged Array: ${mergeArray(arr1, arr2)}`);
+
+
+function compareTriplets(a, b) {
+    let points = [0,0];
+
+    for(let i = 0; i < a.length; i++){
+        if(a[i] > b[i]) points[0]++;
+        else if (a[i] < b[i]) points[1]++;
+    }
+    
+    return points;
+}
+
+let a1 = [1,2,3];
+let b1 = [3,2,1];
+
+console.log(compareTriplets(a1, b1));
