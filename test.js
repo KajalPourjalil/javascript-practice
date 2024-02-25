@@ -126,4 +126,23 @@ function compareTriplets(a, b) {
 let a1 = [1,2,3];
 let b1 = [3,2,1];
 
-console.log(compareTriplets(a1, b1));
+// console.log(compareTriplets(a1, b1));
+
+///////////////////////////////////////////////////////////////
+
+
+function diagDiff(arr){
+    let diag1 = 0;
+    let diag2 = 0;
+
+    for(let i = 0; i < arr.length; i++){
+        diag1 += arr[i][i];
+        diag2 += arr[i][arr.length - 1 - i];
+    }
+
+    return Math.abs(diag1 - diag2);
+}
+
+let a2 = [[1,2,3], [4,5,6], [7,8,9]];
+
+console.log(diagDiff(a2));
