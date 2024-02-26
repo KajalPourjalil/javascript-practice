@@ -133,24 +133,25 @@ function checkForDuplicates(arr) {
 
 // 9. Write a function called checkIfPalindrome that checks if an array contains a palindrome.
 
-function checkIfPalindrome(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    let reversedArr = arr.reverse();
 
-    // compare the original array with its reverse to see if it is a palindrome
-    if (
-      arr.length === reversedArr.length &&
-      arr.every(
-        (element, index) => element === reversedArr[arr.length - index - 1]
-      )
-    ) {
-      // Do something if the arrays are equal and reversed
-      return true;
-    } else {
-      return false;
+function isPalindrome(str){
+  return str === str.split('').reverse().join('');
+}
+
+function checkforPalindrom(arr){
+  let indeces = [];
+  for(let i = 0; i < arr.length; i++){
+    let str = String(arr[i]);
+    if(isPalindrome(str)){
+      indeces.push(i);
     }
   }
+  return indeces;
 }
+
+let a3 = [41,101,89,70,66,12];
+
+console.log(checkforPalindrom(a3));
 
 // 10. Write a JavaScript program that takes two arrays as input and returns an array containing elements common to both
 
@@ -238,4 +239,4 @@ function sumArray(arr1, arr2) {
 }
 
 let arr6 = [6,7,8,9,10];
-console.log(sumArray(arr1, arr6));
+// console.log(sumArray(arr1, arr6));
