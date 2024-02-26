@@ -202,19 +202,43 @@ let a11 = [2, 1, 5, 3, 1, 5, 2];
 ////////////////////////////////////////////////////////////////
 
 
+// function plusMinus(arr) {
+//   let pos = 0;
+//   let neg = 0;
+//   let zero = 0;
+//   for(let i = 0; i <arr.length; i++){
+//       if(arr[i] === 0) zero++;
+//       else if (arr[i] > 0) pos++;
+//       else neg++;
+//   }
+//   return (pos / arr.length + '\n' + neg / arr.length + '\n' + zero / arr.length);
+
+// }
+
 function plusMinus(arr) {
   // Write your code here
   let pos = 0;
   let neg = 0;
   let zero = 0;
-  for(let i = 0; i <arr.length; i++){
-      if(arr[i] === 0) zero++;
-      else if (arr[i] > 0) pos++;
-      else neg++;
-  }
+  arr.forEach((number) => {
+      if (number > 0) pos++;
+      if (number < 0) neg++;
+      if (number == 0) zero++;
+  });
   return (pos / arr.length + '\n' + neg / arr.length + '\n' + zero / arr.length);
 
 }
 
 let a12 = [-4, -1, 0, 9, 12, -5, 8];
-console.log(plusMinus(a12));
+// console.log(plusMinus(a12));
+
+////////////////////////////////////////////////////
+
+function staircase(n){
+  for(let i = 0; i<=n; i++){
+    let spaces = n - i;
+    console.log(' '.repeat(spaces) + '#'.repeat(i));
+  }
+}
+
+staircase(6);
