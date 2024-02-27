@@ -241,13 +241,57 @@ function staircase(n){
   }
 }
 
-staircase(6);
+// staircase(6);
 
 //////////////////////////////////////////////////
 
 function miniMaxSum(arr){
-  
+  let newArr = arr.sort();
+  let min = 0;
+  let max = 0;
 
+  for(let i = 0; i <newArr.length - 1; i++){
+    min += newArr[i];
+  }
+
+  for(let j = 1; j < newArr.length; j++){
+    max += newArr[j];
+  }
+
+  return [min, max];
 }
 
-console.log(miniMaxSum(a1));
+// console.log(miniMaxSum(a1));
+
+//////////////////////////////////////////////
+
+// function birthdayCakeCandles(candles) {
+//   let newarr = candles.sort();
+//   let count = 0;
+//   let max = [];
+//   for(let i = 0; i < candles.length; i++){
+//     if(candles[i] < candles[i+1]) max.push(candles[i+1]);
+//     if(max.includes(candles[i])) count++;
+//   }
+
+//   return count;
+// }
+
+const newArray = candles.sort((a,b)=> a-b);
+    // console.log(newArray);
+    let cnt = 0;
+    var maxAge =newArray[newArray.length-1];
+    let arrLength = newArray.length;
+    for(let i=0; i<arrLength;i++){
+        if(maxAge <= candles[i]){
+            var maxAge = candles[i];
+            //console.log(candles[i]);
+            cnt++;
+            // console.log(cnt);
+        }
+        
+    }
+    return cnt;
+
+let candles = [4,4,1,3];
+console.log(birthdayCakeCandles(candles));
