@@ -277,21 +277,44 @@ function miniMaxSum(arr){
 //   return count;
 // }
 
-const newArray = candles.sort((a,b)=> a-b);
-    // console.log(newArray);
-    let cnt = 0;
-    var maxAge =newArray[newArray.length-1];
-    let arrLength = newArray.length;
-    for(let i=0; i<arrLength;i++){
-        if(maxAge <= candles[i]){
-            var maxAge = candles[i];
-            //console.log(candles[i]);
-            cnt++;
-            // console.log(cnt);
-        }
+// const newArray = candles.sort((a,b)=> a-b);
+//     // console.log(newArray);
+//     let cnt = 0;
+//     var maxAge =newArray[newArray.length-1];
+//     let arrLength = newArray.length;
+//     for(let i=0; i<arrLength;i++){
+//         if(maxAge <= candles[i]){
+//             var maxAge = candles[i];
+//             //console.log(candles[i]);
+//             cnt++;
+//             // console.log(cnt);
+//         }
         
-    }
-    return cnt;
+//     }
+//     return cnt;
 
-let candles = [4,4,1,3];
-console.log(birthdayCakeCandles(candles));
+// let candles = [4,4,1,3];
+// console.log(birthdayCakeCandles(candles));
+
+/////////////////////////////////////////////////////////////
+
+function isSubset(arr1, arr2){
+  // let set1 = arr1.sort();
+  // let set2 = arr2.sort();
+  for(let i = 0; i < arr1.length; i++){
+    // if(arr2[i] === arr1[i]) return true;
+    let exists = false;
+    for(let j = 0; j < arr2.length; j++){
+      if (arr1[i] === arr2[j]){
+        exists = true;
+      }
+    } if(!exists) return false;
+  }
+  
+  return exists;
+}
+
+let set1 = [5,7,8];
+let set2 = [7,5];
+
+console.log(isSubset(set1, set2));
