@@ -36,7 +36,7 @@ a4 = [-10, -8, -6, -4, -2];
 a5 = [1.54, 2.3, 4.01, 5.9];
 a6 = [-5.04, -4.67, -3.99, -2.89];
 
-console.log(mergeSort(a5, a6));
+// console.log(mergeSort(a5, a6));
 
 ////////////////////////////////////////////////////////////
 
@@ -197,8 +197,24 @@ function findSing(arr) {
 }
 
 let a11 = [2, 1, 5, 3, 1, 5, 2];
-console.log(findSing(a11));
+// console.log(findSing(a11));
 
 ////////////////////////////////////////////////////////////////
 
 
+function plusMinus(arr) {
+  // Write your code here
+  let pos = 0;
+  let neg = 0;
+  let zero = 0;
+  for(let i = 0; i <arr.length; i++){
+      if(arr[i] === 0) zero++;
+      else if (arr[i] > 0) pos++;
+      else neg++;
+  }
+  return (pos / arr.length + '\n' + neg / arr.length + '\n' + zero / arr.length);
+
+}
+
+let a12 = [-4, -1, 0, 9, 12, -5, 8];
+console.log(plusMinus(a12));
