@@ -242,3 +242,12 @@ function staircase(n){
 }
 
 staircase(6);
+
+//////////////////////////////////////////////////
+
+function miniMaxSum(arr){
+  
+
+}
+
+console.log(miniMaxSum(a1));

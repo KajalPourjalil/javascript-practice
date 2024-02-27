@@ -19,13 +19,15 @@ function allGreaterThan(arr, t){
 function allGreaterThanTwo(arr, t) {
     for(let i = 0; i < arr.length; i++){
         while(arr[i] < t){
-            return true;
+            return false;
         }
     }
-    return arr;
+    return true;
 }
 
-// console.log(allGreaterThanTwo(array1, integer));
+let array2 = [6,7,8,9];
+
+console.log(allGreaterThanTwo(array2, integer));
 
 
 //return the index of a value
@@ -145,4 +147,4 @@ function diagDiff(arr){
 
 let a2 = [[1,2,3], [4,5,6], [7,8,9]];
 
-console.log(diagDiff(a2));
+// console.log(diagDiff(a2));
