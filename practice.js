@@ -265,35 +265,22 @@ function miniMaxSum(arr){
 
 //////////////////////////////////////////////
 
-// function birthdayCakeCandles(candles) {
-//   let newarr = candles.sort();
-//   let count = 0;
-//   let max = [];
-//   for(let i = 0; i < candles.length; i++){
-//     if(candles[i] < candles[i+1]) max.push(candles[i+1]);
-//     if(max.includes(candles[i])) count++;
-//   }
+function birthdayCakeCandles(){
+const newArray = candles.sort((a,b)=> a-b);
+    // console.log(newArray);
+    let cnt = 0;
+    var maxAge =newArray[newArray.length-1];
+    let arrLength = newArray.length;
+    for(let i=0; i<arrLength;i++){
+        if(maxAge <= candles[i]){
+            var maxAge = candles[i];
+            cnt++;
+        }
+    }
+    return cnt;
+  }
 
-//   return count;
-// }
-
-// const newArray = candles.sort((a,b)=> a-b);
-//     // console.log(newArray);
-//     let cnt = 0;
-//     var maxAge =newArray[newArray.length-1];
-//     let arrLength = newArray.length;
-//     for(let i=0; i<arrLength;i++){
-//         if(maxAge <= candles[i]){
-//             var maxAge = candles[i];
-//             //console.log(candles[i]);
-//             cnt++;
-//             // console.log(cnt);
-//         }
-        
-//     }
-//     return cnt;
-
-// let candles = [4,4,1,3];
+let candles = [4,4,1,3];
 // console.log(birthdayCakeCandles(candles));
 
 /////////////////////////////////////////////////////////////
@@ -317,4 +304,14 @@ function isSubset(arr1, arr2){
 let set1 = [5,7,8];
 let set2 = [7,5];
 
-console.log(isSubset(set1, set2));
+// console.log(isSubset(set1, set2));
+
+////////////////////////////////////////////////////////////////
+
+function timeConversion(s){
+  let time = new Date();
+  // if (s === )
+  return time;
+}
+
+console.log(timeConversion());
